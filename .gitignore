@@ -1,0 +1,10 @@
+build/
+devel/
+logs/
+CMakeFiles/
+Makefile
+catkin_generated
+cmake_install.cmake
+*~
+CTestTestfile.cmake
+.catkin_workspace

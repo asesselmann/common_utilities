@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(common_utilies)
+project(common_utilities)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
@@ -20,6 +20,7 @@ add_message_files(
 	DIRECTORY
 	msgs
 	FILES
+	ControllerState.msg
 	InitializeRequest.msg
 	InitializeResponse.msg
 	Status.msg
@@ -27,12 +28,11 @@ add_message_files(
 	Trajectory.msg
 )
 
-add_service_files(
-	DIRECTORY
-	srvs
-	FILES
-	
-)
+#add_service_files(
+#	DIRECTORY
+#	srvs
+#	FILES
+#)
 
 generate_messages(
 	DEPENDENCIES std_msgs

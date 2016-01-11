@@ -27,12 +27,12 @@ add_message_files(
 	Trajectory.msg
 )
 
-add_service_files(
-	DIRECTORY
-	srvs
-	FILES
-	
-)
+#add_service_files(
+#	DIRECTORY
+#	srvs
+#	FILES
+#	
+#)
 
 generate_messages(
 	DEPENDENCIES std_msgs

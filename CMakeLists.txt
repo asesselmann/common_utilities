@@ -15,15 +15,20 @@ add_message_files(
 	msgs
 	FILES
 	ControllerState.msg
-	InitializeRequest.msg
-	InitializeResponse.msg
 	Status.msg
 	Steer.msg
 	Trajectory.msg
+)
+
+add_service_files(
+	DIRECTORY
+	srvs
+	FILES
+	Initialize.srv
 )
 
 generate_messages(
 	DEPENDENCIES std_msgs
 )
 
-catkin_package(CATKIN_DEPENDS message_runtime)
+catkin_package(CATKIN_DEPENDS message_runtime message_generation)

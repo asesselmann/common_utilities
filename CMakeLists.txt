@@ -15,8 +15,8 @@ add_message_files(
 	msgs
 	FILES
 	ControllerState.msg
-	Status.msg
 	Steer.msg
+	Status.msg
 )
 
 add_service_files(

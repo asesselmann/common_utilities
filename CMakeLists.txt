@@ -16,7 +16,6 @@ add_message_files(
 	FILES
 	ControllerState.msg
 	Steer.msg
-	Status.msg
 )
 
 add_service_files(
@@ -25,6 +24,7 @@ add_service_files(
 	FILES
 	Initialize.srv
 	Trajectory.srv
+	Status.srv
 )
 
 generate_messages(

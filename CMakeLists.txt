@@ -14,7 +14,6 @@ add_message_files(
 	DIRECTORY
 	msgs
 	FILES
-	ControllerState.msg
 	Steer.msg
 	Status.msg
 )

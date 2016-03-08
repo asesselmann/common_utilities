@@ -1,4 +1,4 @@
 uint32 samplerate
 float32[] waypoints
 ---
-ControllerState state
+int8 state

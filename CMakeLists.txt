@@ -26,6 +26,7 @@ add_service_files(
 	Initialize.srv
 	Trajectory.srv
 	EmergencyStop.srv
+	Record.srv
 )
 
 generate_messages(

@@ -1,0 +1,7 @@
+int32[] idList
+int32[] controlmode
+float32 samplingTime
+float32 duration
+string name
+---
+string[] trajectories

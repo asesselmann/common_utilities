@@ -17,6 +17,7 @@ add_message_files(
 	ControllerState.msg
 	Steer.msg
 	Status.msg
+	Waypoints.msg
 )
 
 add_service_files(

@@ -4,4 +4,4 @@ float32 samplingTime
 float32 duration
 string name
 ---
-string[] trajectories
+Waypoints[] trajectories

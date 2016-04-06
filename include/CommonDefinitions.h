@@ -7,7 +7,17 @@
 
 enum ControlMode {POSITION_CONTROL = 1, VELOCITY_CONTROL, FORCE_CONTROL};
 
-enum STATUS {UNDEFINED=0, INITIALIZED, PREPROCESS_TRAJECTORY, TRAJECTORY_READY,TRAJECTORY_FAILED, TRAJECTORY_PLAYING, TRAJECTORY_DONE, INITIALIZE_ERROR};
+enum ControllerState {   UNDEFINED=0,
+                        INITIALIZED,
+                        PREPROCESS_TRAJECTORY,
+                        TRAJECTORY_READY,
+                        TRAJECTORY_FAILED,
+                        TRAJECTORY_PLAYING,
+                        TRAJECTORY_DONE,
+                        INITIALIZE_ERROR    };
+
+
+
 //static const char * statusStrings[] = { "UNDEFINED", "INITIALIZED", "PREPROCESS_TRAJECTORY",
 //                                        "TRAJECTORY_READY", "TRAJECTORY_FAILED", "TRAJECTORY_PLAYING",
 //                                        "TRAJECTORY_DONE", "INITIALIZE_ERROR" };

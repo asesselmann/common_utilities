@@ -1,3 +1,3 @@
-int8 id
+int32 id
 int8 state
 

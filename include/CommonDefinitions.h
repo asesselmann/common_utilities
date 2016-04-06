@@ -7,12 +7,13 @@
 
 enum ControlMode {POSITION_CONTROL = 1, VELOCITY_CONTROL, FORCE_CONTROL};
 
-enum ControllerState {   UNDEFINED=0,
+enum ControllerState {  UNDEFINED=0,
                         INITIALIZED,
                         PREPROCESS_TRAJECTORY,
                         TRAJECTORY_READY,
                         TRAJECTORY_FAILED,
                         TRAJECTORY_PLAYING,
+                        TRAJECTORY_PAUSED,
                         TRAJECTORY_DONE,
                         INITIALIZE_ERROR    };
 

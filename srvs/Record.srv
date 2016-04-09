@@ -1,5 +1,4 @@
-int32[] idList
-int32[] controlmode
+ControllerRequest[] controllers
 float32 samplingTime
 ---
-Waypoints[] trajectories
+Trajectory[] trajectories

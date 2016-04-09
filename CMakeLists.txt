@@ -14,10 +14,11 @@ add_message_files(
 	DIRECTORY
 	msgs
 	FILES
+	ControllerRequest.msg
 	ControllerState.msg
 	Steer.msg
 	Status.msg
-	Waypoints.msg
+	Trajectory.msg
 )
 
 add_service_files(
@@ -25,7 +26,7 @@ add_service_files(
 	srvs
 	FILES
 	Initialize.srv
-	Trajectory.srv
+	SetTrajectory.srv
 	EmergencyStop.srv
 	Record.srv
 )

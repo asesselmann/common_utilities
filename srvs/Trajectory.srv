@@ -1,4 +1,0 @@
-uint32 samplerate
-float32[] waypoints
----
-uint8 state

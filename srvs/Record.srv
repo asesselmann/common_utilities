@@ -1,4 +1,4 @@
 ControllerRequest[] controllers
-float32 samplingTime
+float32 sampleRate
 ---
 Trajectory[] trajectories

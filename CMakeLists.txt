@@ -16,6 +16,7 @@ add_message_files(
 	FILES
 	ControllerRequest.msg
 	ControllerState.msg
+	RoboyState.msg
 	Steer.msg
 	Status.msg
 	Trajectory.msg

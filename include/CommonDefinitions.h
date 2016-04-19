@@ -7,7 +7,13 @@
 
 enum ControlMode {UNDEFINED_CONTROL = 0, POSITION_CONTROL, VELOCITY_CONTROL, FORCE_CONTROL};
 
-enum ControllerState {  UNDEFINED=0,
+static const char * controlModeStrings[] = { "undefined", "position", "velocity", "force" };
+
+static const char * getControlModeString(ControlMode mode) {
+	return controlModeStrings[mode];
+}
+
+enum ControllerState {  UNDEFINED = 0,
                         INITIALIZED,
                         PREPROCESS_TRAJECTORY,
                         TRAJECTORY_READY,

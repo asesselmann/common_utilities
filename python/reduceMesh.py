@@ -44,4 +44,4 @@ else:
   bpy.data.objects['node'].modifiers["Decimate"].ratio=float(argv[2])
   bpy.ops.object.modifier_apply(modifier='DECIMATE')
 
-  bpy.ops.wm.collada_export(filepath=argv[1], selected=True, apply_modifiers=True)
+  bpy.ops.wm.collada_export(filepath=argv[1], selected=True, apply_modifiers=True, triangulate=True )

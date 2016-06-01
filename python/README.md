@@ -6,12 +6,19 @@ blender
 python3
 
 ## Usage
-Example:
+Example directory:
 ```
 #!/bin/bash
-python reduceMeshesInDirectory.py /home/letrend/workspace/poseestimator/models/roboy/dae/ /home/letrend/workspace/poseestimator/models/roboy_simplified/dae/ 0.1
+python3 reduceMeshesInDirectory.py /home/letrend/workspace/poseestimator/models/roboy/dae/ /home/letrend/workspace/poseestimator/models/roboy_simplified/dae/ 0.1
 ```
 The first two parameters define paths to input/output directories, the last parameters defines the ratio of mesh reduction (c.f. [decimate modifier](https://www.blender.org/manual/modeling/modifiers/generate/decimate.html)). The script search through the input directory and transforms every .dae file to a .dae file with the same name into the output directory. NOTE: mind the additional '/' in the input/output paths.
+
+Example single file:
+```
+#!/bin/bash
+python3 reduceMeshSingleFile.py ~/workspace/poseestimator/models/roboy/dae/p-oberschenkel-v02.dae ~/workspace/poseestimator/models/roboy_simplified/dae/p-oberschenkel-v02.dae 0.05
+```
+The first two parameters define paths to input/output .dae file, while the thir parameter defines the ratio of mesh reduction.
 
 ## Note
 There are no sanity checks regarding your original files. They will be overwritten, if you set the output directory to your input directory!

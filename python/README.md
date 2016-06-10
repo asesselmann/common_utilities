@@ -2,9 +2,16 @@
 The reduceMeshesInDirectory.py is a helper script for reducing meshes of file type .dae
 
 ## Dependencies
-blender
 python3
-
+blender (Ubuntu14 repo version does not work, use the newest [version](https://www.blender.org/download/) )
+### Ubuntu14 
+Example: 
+```
+#!/bin/bash
+tar xf /path/to/blender-2.77a-linux-glibc211-x86_64.tar.bz2
+sudo mv blender-2.77a-linux-glibc211-x86_64/ /opt/blender
+sudo ln -s /opt/blender/blender /usr/local/bin/blender
+```
 ## Usage
 Example directory:
 ```

@@ -35,6 +35,8 @@ else:
   bpy.ops.object.mode_set(mode='EDIT')
 
   bpy.ops.mesh.select_all(action='SELECT')
+  for obj in bpy.context.selected_objects:
+    obj.name = "node"
 
   candidate_list = [item.name for item in bpy.data.objects if item.type == "MESH"]
 

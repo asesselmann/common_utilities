@@ -16,6 +16,7 @@ add_message_files(
 	FILES
 	ControllerRequest.msg
 	ControllerState.msg
+    Initialize.msg
 	RoboyState.msg
 	Steer.msg
 	Status.msg
@@ -26,7 +27,6 @@ add_service_files(
 	DIRECTORY
 	srvs
 	FILES
-	Initialize.srv
 	SetTrajectory.srv
 	EmergencyStop.srv
 	Record.srv

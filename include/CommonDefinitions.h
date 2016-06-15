@@ -22,7 +22,7 @@ enum ControllerState {  UNDEFINED = 0,
                         TRAJECTORY_PAUSED,
                         TRAJECTORY_DONE,
                         INITIALIZE_ERROR,
-                        STOPPED };
+                        STOPPED};
 
 
 

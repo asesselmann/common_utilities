@@ -10,3 +10,4 @@ CTestTestfile.cmake
 .catkin_workspace
 .idea/
 *.log
+*.swp

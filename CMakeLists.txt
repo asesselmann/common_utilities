@@ -11,8 +11,6 @@ find_package(catkin REQUIRED cmake_modules COMPONENTS
         )
 
 add_message_files(
-        DIRECTORY
-        msgs
         FILES
         ControllerRequest.msg
         ControllerState.msg
@@ -26,14 +24,12 @@ add_message_files(
 )
 
 add_service_files(
-        DIRECTORY
-        srvs
         FILES
         EmergencyStop.srv
 )
 
 generate_messages(
-        DEPENDENCIES std_msgs
+        DEPENDENCIES std_msgs std_srvs
 )
 
 catkin_package(CATKIN_DEPENDS message_runtime message_generation)

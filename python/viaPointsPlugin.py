@@ -57,8 +57,8 @@ class ViaPointInfoOperator(bpy.types.Operator):
 #    ui
 # ------------------------------------------------------------------------
 
-sdf_file = "/home/letrend/workspace/ros_control/src/roboy_simulation/legs_with_muscles_simplified/model.sdf"
-stl_dir = "/home/letrend/workspace/ros_control/src/roboy_simulation/legs_with_muscles_simplified/cad"
+sdf_file = "/home/letrend/workspace/roboy-ros-control/src/roboy_models/legs_with_muscles_simplified/model.sdf"
+stl_dir = "/home/letrend/workspace/roboy-ros-control/src/roboy_models/legs_with_muscles_simplified/cad"
 
 class FilePath(PropertyGroup):
     sdf_file = StringProperty(

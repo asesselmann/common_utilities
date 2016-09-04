@@ -5,9 +5,9 @@
 #ifndef ROBOY_CONTROL_COMMONDEFINITIONS_H
 #define ROBOY_CONTROL_COMMONDEFINITIONS_H
 
-enum ControlMode {UNDEFINED_CONTROL = 0, POSITION_CONTROL, VELOCITY_CONTROL, FORCE_CONTROL};
+enum ControlMode {UNDEFINED_CONTROL = 0, POSITION_CONTROL, VELOCITY_CONTROL, FORCE_CONTROL, MUSCLE_ACTIVITY_CONTROL};
 
-static const char * controlModeStrings[] = { "undefined", "position", "velocity", "force" };
+static const char * controlModeStrings[] = { "undefined", "position", "velocity", "force", "muscle_activity" };
 
 static const char * getControlModeString(ControlMode mode) {
 	return controlModeStrings[mode];

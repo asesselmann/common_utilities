@@ -41,4 +41,12 @@ enum LEG{
     RIGHT,
     NONE
 };
+
+enum LEG_STATE{
+    Stance,
+    Lift_off,
+    Swing,
+    Stance_Preparation
+};
+
 #endif //ROBOY_CONTROL_COMMONDEFINITIONS_H

@@ -49,4 +49,26 @@ enum LEG_STATE{
     Stance_Preparation
 };
 
+enum VISUALIZATION{
+    Tendon,
+    COM,
+    Forces,
+    MomentArm,
+    Mesh,
+    StateMachineParameters,
+    CoordinateSystems,
+    ForceTorqueSensors
+};
+
+enum ABORTION{
+    COMheight,
+    headingDeviation,
+    selfCollision
+};
+
+// Converts degrees to radians.
+#define degreesToRadians(angleDegrees) (angleDegrees * (float)M_PI / 180.0f)
+// Converts radians to degrees.
+#define radiansToDegrees(angleRadians) (angleRadians * 180.0f / (float)M_PI)
+
 #endif //ROBOY_CONTROL_COMMONDEFINITIONS_H

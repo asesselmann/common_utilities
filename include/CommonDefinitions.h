@@ -56,14 +56,22 @@ enum VISUALIZATION{
     MomentArm,
     Mesh,
     StateMachineParameters,
-    CoordinateSystems,
-    ForceTorqueSensors
+    ForceTorqueSensors,
+    InteractiveMarkers
 };
 
 enum ABORTION{
     COMheight,
     headingDeviation,
     selfCollision
+};
+
+enum SIMULATIONCONTROL{
+    Play,
+    Pause,
+    Rewind,
+    Slow_Motion,
+    UpdateInteractiveMarker
 };
 
 // Converts degrees to radians.

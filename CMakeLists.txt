@@ -22,6 +22,8 @@ add_message_files(
         Trajectory.msg
         Record.msg
         RecordResult.msg
+        MotorStatus.msg
+        MotorCommand.msg
 )
 
 add_service_files(

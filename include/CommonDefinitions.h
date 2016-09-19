@@ -74,6 +74,17 @@ enum SIMULATIONCONTROL{
     UpdateInteractiveMarker
 };
 
+enum{
+    POSITION = 0,
+    VELOCITY
+};
+
+enum PLANE{
+    TRAVERSAL,
+    SAGITTAL,
+    CORONAL
+};
+
 // Converts degrees to radians.
 #define degreesToRadians(angleDegrees) (angleDegrees * (float)M_PI / 180.0f)
 // Converts radians to degrees.

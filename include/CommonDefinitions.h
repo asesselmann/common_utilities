@@ -37,13 +37,13 @@ enum ControllerState {  UNDEFINED = 0,
 enum SteeringCommand {STOP_TRAJECTORY=0,PLAY_TRAJECTORY,PAUSE_TRAJECTORY,REWIND_TRAJECTORY};
 
 enum LEG{
-    LEFT,
+    LEFT = 0,
     RIGHT,
     NONE
 };
 
 enum LEG_STATE{
-    Stance,
+    Stance = 0,
     Lift_off,
     Swing,
     Stance_Preparation

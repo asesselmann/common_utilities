@@ -3,16 +3,15 @@ project(common_utilities)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-find_package(catkin REQUIRED cmake_modules COMPONENTS
+find_package(catkin REQUIRED COMPONENTS
         roscpp
+        #rospy
         std_msgs
         std_srvs
         message_generation
         )
 
 add_message_files(
-        DIRECTORY
-        msgs
         FILES
         ControllerRequest.msg
         ControllerState.msg
@@ -26,14 +25,13 @@ add_message_files(
 )
 
 add_service_files(
-        DIRECTORY
-        srvs
         FILES
         EmergencyStop.srv
+	
 )
 
 generate_messages(
-        DEPENDENCIES std_msgs
+        DEPENDENCIES std_msgs std_srvs
 )
 
-catkin_package(CATKIN_DEPENDS message_runtime message_generation)
+catkin_package(CATKIN_DEPENDS message_runtime )

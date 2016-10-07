@@ -22,6 +22,7 @@ add_message_files(
         Trajectory.msg
         Record.msg
         RecordResult.msg
+	Resetting.msg
         MotorStatus.msg
         MotorCommand.msg
 )

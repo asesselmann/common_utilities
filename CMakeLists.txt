@@ -15,19 +15,19 @@ add_message_files(
         FILES
         ControllerRequest.msg
         ControllerState.msg
-        Initialize.msg
+        MotorStatus.msg
+        MotorCommand.msg
         RoboyState.msg
         Steer.msg
         Status.msg
         Trajectory.msg
-        Record.msg
-        RecordResult.msg
-        MotorStatus.msg
-        MotorCommand.msg
 )
 
 add_service_files(
         FILES
+        Initialize.srv
+        Record.srv
+        SetTrajectory.srv
         EmergencyStop.srv
 )
 

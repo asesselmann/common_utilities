@@ -12,6 +12,8 @@ find_package(catkin REQUIRED cmake_modules COMPONENTS
 include_directories(    include
                         ${catkin_INCLUDE_DIRS})
 add_message_files(
+        DIRECTORY
+        msg
         FILES
         ControllerRequest.msg
         ControllerState.msg
@@ -24,6 +26,8 @@ add_message_files(
 )
 
 add_service_files(
+        DIRECTORY
+        srv
         FILES
         Initialize.srv
         Record.srv

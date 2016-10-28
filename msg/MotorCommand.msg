@@ -1,1 +1,2 @@
-float32[] setpoint
+int32 id
+float32 setpoint

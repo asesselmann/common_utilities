@@ -7,6 +7,7 @@ find_package(catkin REQUIRED cmake_modules COMPONENTS
         roscpp
         std_msgs
         std_srvs
+        geometry_msgs
         message_generation
         )
 include_directories(    include
@@ -19,6 +20,7 @@ add_message_files(
         ControllerState.msg
         MotorStatus.msg
         MotorCommand.msg
+        Pose.msg
         RoboyState.msg
         Steer.msg
         Status.msg
@@ -36,7 +38,7 @@ add_service_files(
 )
 
 generate_messages(
-        DEPENDENCIES std_msgs std_srvs
+        DEPENDENCIES std_msgs std_srvs geometry_msgs
 )
 
 catkin_package( CATKIN_DEPENDS roscpp message_runtime message_generation

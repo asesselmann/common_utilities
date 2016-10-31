@@ -97,6 +97,11 @@ class OBJECT_PT_my_panel(Panel):
         col.operator("my.accept_viapoint", text="accept viaPoint")
         col.operator("wm.viapoint_info")
 
+        global sdf_file
+        global stl_dir
+        sdf_file = scn.sdf_file.sdf_file
+        stl_dir = scn.stl_dir.stl_dir
+
 #   load meshes Button
 class OBJECT_OT_Button(bpy.types.Operator):
     bl_idname = "my.load_meshes_button"
